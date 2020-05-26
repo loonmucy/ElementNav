@@ -8,6 +8,7 @@ import dynamicForm from '@/pages/tableComponent/dynamicForm'
 import tableRowClass from '@/pages/tableComponent/tableRowClass'
 import dynamicAddRow from '@/pages/tableComponent/dynamicAddRow'
 import copyNavigation from '@/pages/tableComponent/copyNavigation'
+import echartsPage from '@/pages/echartsPage/Index'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,7 @@ const router = new VueRouter({
         {path:'/tableComponent/dynamicAddRow',name:'dynamicAddRow',component:dynamicAddRow,label:'动态添加表格行',id:'0704'},
         {path:'/tableComponent/copyNavigation',name:'copyNavigation',component:copyNavigation,label:'表格仿造导航功能',id:'0705'}
       ]},
+      {path:'/echartsPage',name:'echartsPage',component:echartsPage,label:'echartsPage',id:'08'},
     ]
   })
 
