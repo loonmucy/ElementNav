@@ -14,14 +14,17 @@
 <script>
 export default {
     props: {
+        
 
     },
     data() {
         return {
             dialogVisible: false,
+
         }
     },
     created() {
+
     },
     methods: {
 
