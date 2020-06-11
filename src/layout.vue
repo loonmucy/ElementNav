@@ -9,5 +9,10 @@ export default {
     components: {
         mainData
     },
+    created() {
+
+     },
+     methods: {
+     }
 }
 </script>

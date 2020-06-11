@@ -10,6 +10,7 @@ import dynamicAddRow from '@/pages/tableComponent/dynamicAddRow'
 import copyNavigation from '@/pages/tableComponent/copyNavigation'
 import echartsPage from '@/pages/echartsPage/Index'
 import popUpBox from '@/pages/popUpBox/Index'
+import counter from '@/pages/vuex/counter/Index'
 
 
 Vue.use(VueRouter)
@@ -17,7 +18,10 @@ Vue.use(VueRouter)
 const router = new VueRouter({
     routes: [
       {path:'/',name:'home',component:home,label:'首页',id:'01'},
-      {path:'/page1',name:'page1',component:page1,label:'vuex',id:'05'},
+      {path:'/vuex',name:'vuex',component:layout,label:'vuex',id:'05',children: [
+        {path:'/vuex/page1',name:'page1',component:page1,label:'page1',id:'0501'},
+        {path:'/vuex/counter',name:'counter',component:counter,label:'counter',id:'0502'}
+      ]},
       {path:'/tableComponent',name:'tableComponent', label:'表格组件',component:layout,id:'07',children:[
         {path:'/tableComponent/checkboxAddTable',name:'checkboxAddTable',component:checkboxAddTable,label:'表格动态列',id:'0701'},
         {path:'/tableComponent/dynamicForm',name:'dynamicForm',component:dynamicForm,label:'表格动态行列',id:'0702'},
