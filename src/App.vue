@@ -1,9 +1,9 @@
 <template>
   <div id="app" class="atb-container">
-    <div class="left-bar">
-      <leftBar></leftBar>
-    </div>
+      <router-view class="left-bar" name="leftBar"></router-view>
     <div class="main-data">
+      <router-view name="headerBar"></router-view>
+      <!-- <router-view /> -->
       <layout></layout>
     </div>
     
@@ -11,13 +11,14 @@
 </template>
 
 <script>
-import leftBar from './leftBar'
+// import leftBar from './leftBar'
 import layout from './layout'
 
 export default {
   name: 'App',
   components: {
-    layout,leftBar
+    // layout,leftBar
+    layout
   },
   data() {
     return {

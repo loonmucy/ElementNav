@@ -1,13 +1,14 @@
 <!--主页面布局组件-->
 <template>
-    <mainData></mainData>
+    <!-- <mainData></mainData> -->
+    <router-view></router-view>
 </template>
 
 <script>
-import mainData from './mainData'
+// import mainData from './mainData'
 export default {
     components: {
-        mainData
+        // mainData
     },
     created() {
 

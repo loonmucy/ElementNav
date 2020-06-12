@@ -35,7 +35,7 @@ export default {
     },
     computed: {
         routes() {
-            return this.$router.options.routes
+            return this.$router.options.routes.slice(1)
         }
     }
 }
