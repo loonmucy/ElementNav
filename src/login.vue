@@ -46,7 +46,9 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: lavender;
+    background: #eee;
     text-align: center;
+    height: 100%;
+    width: 100%;
 }
 </style>

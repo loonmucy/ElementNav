@@ -20,7 +20,6 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
     routes: [
-      // {path:'/',name:'home',component:home,label:'首页',id:'01'},
       {path:'/login',name:'login',component: login,label:'登录',id:'00'},
       {path:'/',name:'home',components:{default:home,leftBar:leftBar,headerBar:header},label:'首页',id:'01'},
       {path:'/vuex',name:'vuex',components:{default:layout,leftBar:leftBar,headerBar:header},label:'vuex',id:'05',children: [
