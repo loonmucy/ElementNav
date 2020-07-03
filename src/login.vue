@@ -30,10 +30,10 @@ export default {
     },
     methods: {
         handleLogin() {
-            if(this.form.name == 'admin') {
-                sessionStorage.setItem('name','admin')
+            // if(this.form.name != 'admin') {
+                sessionStorage.setItem('name',this.form.name)
                 this.$router.push({path:'/home'})
-            }
+            // }
         },
         handleReset() {
             this.form.name = '',
