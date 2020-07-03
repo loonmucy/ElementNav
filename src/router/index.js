@@ -20,8 +20,9 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
     routes: [
+      {path: '/',redirect:'/login'},
       {path:'/login',name:'login',component: login,label:'登录',id:'00'},
-      {path:'/',name:'home',components:{default:home,leftBar:leftBar,headerBar:header},label:'首页',id:'01'},
+      {path:'/home',name:'home',components:{default:home,leftBar:leftBar,headerBar:header},label:'首页',id:'01'},
       {path:'/vuex',name:'vuex',components:{default:layout,leftBar:leftBar,headerBar:header},label:'vuex',id:'05',children: [
         {path:'/vuex/page1',name:'page1',components:{default:page1,leftBar:leftBar,headerBar:header},label:'page1',id:'0501'},
         {path:'/vuex/counter',name:'counter',components:{default:counter,leftBar:leftBar,headerBar:header},label:'counter',id:'0502'}

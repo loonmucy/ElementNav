@@ -31,7 +31,8 @@ export default {
     methods: {
         handleLogin() {
             if(this.form.name == 'admin') {
-                this.$router.push({path:'/'})
+                sessionStorage.setItem('name','admin')
+                this.$router.push({path:'/home'})
             }
         },
         handleReset() {
